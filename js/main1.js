@@ -7,6 +7,7 @@ function loadPageFunction() {
   // loadingPage.classList.add("display-none")
   // contentPage.classList.remove("display-none")
 }
+AOS.init();
 
 
 const imageComparisonSlider = document.querySelector('[data-component="image-comparison-slider"]')

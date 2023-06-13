@@ -6,6 +6,7 @@ function loadPageFunction() {
   // contentPage.classList.remove("display-none");
 }
 
+AOS.init();
 
 
 
