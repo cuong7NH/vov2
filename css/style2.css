@@ -200,6 +200,7 @@
   .b2-ss3-flex .b2-ss3-flex-right {
     flex: 0 0 100%;
     max-width: 100%;
+  align-self: stretch;
   }
 }
 
@@ -214,6 +215,17 @@
   flex: 0 0 calc(33.33% - 20px);
   max-width: calc(33.33% - 20px);
 }
+
+@media screen and (max-width: 700px) {
+  .b2-ss3-3-image {
+    flex-direction: column;
+  }
+  .b2-ss3-3-image .container-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 .b2-ss3-bang {
   display: flex;
   align-items: center;
