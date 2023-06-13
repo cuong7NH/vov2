@@ -72,7 +72,9 @@ audio.addEventListener("timeupdate", () => {
 
   current.textContent = timeFormat(time_current);
 
-  list_span[position].classList.add("active");
+  for (k = 0; k <= position; k++) {
+    list_span[k].classList.add("active");
+  }
 });
 
 
@@ -148,8 +150,9 @@ audio1.addEventListener("timeupdate", () => {
   let position = Math.floor((time_current * 100) / time_duration);
 
   current.textContent = timeFormat(time_current);
-
-  list_span1[position].classList.add("active");
+  for (k = 0; k <= position; k++) {
+    list_span1[k].classList.add("active");
+  }
 });
 
 
@@ -219,7 +222,9 @@ audio2.addEventListener("timeupdate", () => {
 
   current.textContent = timeFormat(time_current);
 
-  list_span2[position].classList.add("active");
+  for (k = 0; k <= position; k++) {
+    list_span2[k].classList.add("active");
+  }
 });
 
 
@@ -290,7 +295,9 @@ audio3.addEventListener("timeupdate", () => {
 
   current.textContent = timeFormat(time_current);
 
-  list_span3[position].classList.add("active");
+  for (k = 0; k <= position; k++) {
+    list_span3[k].classList.add("active");
+  }
 });
 
 
@@ -357,10 +364,13 @@ audio4.addEventListener("timeupdate", () => {
   time_duration = audio4.duration;
 
   let position = Math.floor((time_current * 100) / time_duration);
+  console.log("position", position);
 
   current.textContent = timeFormat(time_current);
 
-  list_span4[position].classList.add("active");
+  for (k = 0; k <= position; k++) {
+    list_span4[k].classList.add("active");
+  }
 });
 
 list_span4.forEach((element, index) => {
@@ -427,8 +437,9 @@ audio5.addEventListener("timeupdate", () => {
   let position = Math.floor((time_current * 100) / time_duration);
 
   current.textContent = timeFormat(time_current);
-
-  list_span5[position].classList.add("active");
+  for (k = 0; k <= position; k++) {
+    list_span5[k].classList.add("active");
+  }
 });
 
 list_span5.forEach((element, index) => {
@@ -497,7 +508,9 @@ audio6.addEventListener("timeupdate", () => {
   let position = Math.floor((time_current * 100) / time_duration);6
   current.textContent = timeFormat(time_current);
 
-  list_span6[position].classList.add("active");
+  for (k = 0; k <= position; k++) {
+    list_span6[k].classList.add("active");
+  }
 });
 
 list_span6.forEach((element, index) => {
@@ -564,7 +577,9 @@ audio7.addEventListener("timeupdate", () => {
   let position = Math.floor((time_current * 100) / time_duration);6
   current.textContent = timeFormat(time_current);
 
-  list_span7[position].classList.add("active");
+  for (k = 0; k <= position; k++) {
+    list_span7[k].classList.add("active");
+  }
 });
 
 list_span7.forEach((element, index) => {

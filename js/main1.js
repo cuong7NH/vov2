@@ -132,7 +132,9 @@ audio.addEventListener("timeupdate", () => {
 
   current.textContent = timeFormat(time_current);
 
-  list_span[position].classList.add("active");
+  for (k = 0; k <= position; k++) {
+    list_span[k].classList.add("active");
+  }
 });
 
 
