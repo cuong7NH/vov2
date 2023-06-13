@@ -301,6 +301,12 @@ body {
 .display-none {
   display: none !important;
 }
+.w-51 {
+  width: 510px;
+}
+.w-44 {
+  width: 440px;
+}
 
 /* / */
 

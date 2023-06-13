@@ -305,11 +305,10 @@
   border-radius: 6px;
   margin-bottom: 6px;
   text-align: center;
-  width: 480px;
+  align-self: flex-end;
+  padding: 0 12px;
 }
-.image-comparison .banner-text h1:first-child {
-  width: 380px;
-}
+
 .image-comparison .banner-text p {
   color: #fff;
   text-align: right;
@@ -321,10 +320,13 @@
   }
   .image-comparison .banner-text h1 {
     font-size: 22px;
-    width: 320px;
   }
-  .image-comparison .banner-text h1:first-child {
-    width: 250px;
+  .image-comparison .banner-text p {
+    font-size: 16px;
+  }
+  .image-comparison .banner-text {
+    top: 80%;
+    right: 40px;
   }
 }
 
