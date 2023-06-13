@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/init.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/audio.css" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/video.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <title>The “Queen” athlete</title>
+  </head>
+  <body onload="loadPageFunction()">
+    <!-- Start Loading Page -->
+    <div id="loading-page" class="loading-page">
+      <img src="images/icon-xe-lan.png" alt="" style="width: 100px" />
+      <div class="loader">Loading...</div>
+    </div>
+    <!-- End Loading Page -->
+    <div id="page-content" class="hidden-page">
+      <!-- Start Header tab -->
+      <div class="header">
+        <div class="header-tab">
+          <div class="header-tab-item header-tab-item-1">
+            <a href="#">The “Queen” athlete</a>
+          </div>
+          <div
+            class="header-tab-item header-tab-item-2 header-tab-item-no-active"
+          >
+            <a href="phan2.html">untiring footsteps</a>
+          </div>
+          <div
+            class="header-tab-item header-tab-item-3 header-tab-item-no-active"
+          >
+            <a href="phan3.html">Lối đi hạnh phúc</a>
+          </div>
+        </div>
+      </div>
+      <!-- Start Banner -->
+      <div style="text-align: center">
+        <section
+          class="image-comparison"
+          data-component="image-comparison-slider"
+          style="height: calc(100vh - 100px); position: relative"
+        >
+          <div class="banner-text">
+            <h1 style="width: 510px">Paving the Path of Hope for</h1>
+            <h1 style="width: 440px">People with Disabilities</h1>
+            <p>
+              Một sản phẩm đa phương tiện của Kênh VOV Giao thông , Đài TNVN
+            </p>
+          </div>
+          <div class="image-comparison__slider-wrapper">
+            <label for="image-comparison-range" class="image-comparison__label"
+              >Move image comparison slider</label
+            >
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="image-comparison__range"
+              id="image-compare-range"
+              data-image-comparison-range=""
+            />
+
+            <div
+              class="image-comparison__image-wrapper image-comparison__image-wrapper--overlay"
+              data-image-comparison-overlay=""
+            >
+              <figure
+                class="image-comparison__figure image-comparison__figure--overlay"
+              >
+                <!-- <picture class="image-comparison__picture"> -->
+                <img
+                  src="images/b1/banner1.jpg"
+                  alt="Mojave desert in the sun"
+                  class="image-comparison__image"
+                />
+                <!-- </picture> -->
+              </figure>
+            </div>
+
+            <div
+              class="image-comparison__slider"
+              data-image-comparison-slider=""
+            >
+              <span
+                class="image-comparison__thumb"
+                data-image-comparison-thumb=""
+              >
+                <svg
+                  class="image-comparison__thumb-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="10"
+                  viewBox="0 0 18 10"
+                  fill="currentColor"
+                >
+                  <path
+                    class="image-comparison__thumb-icon--left"
+                    d="M12.121 4.703V.488c0-.302.384-.454.609-.24l4.42 4.214a.33.33 0 0 1 0 .481l-4.42 4.214c-.225.215-.609.063-.609-.24V4.703z"
+                  ></path>
+                  <path
+                    class="image-comparison__thumb-icon--right"
+                    d="M5.879 4.703V.488c0-.302-.384-.454-.609-.24L.85 4.462a.33.33 0 0 0 0 .481l4.42 4.214c.225.215.609.063.609-.24V4.703z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+
+            <div class="image-comparison__image-wrapper">
+              <figure class="image-comparison__figure">
+                <!-- <picture class="image-comparison__picture"> -->
+                <img
+                  src="images/b1/banner2.png"
+                  alt="Mojave desert in the dark"
+                  class="image-comparison__image image-comparison__image2"
+                />
+                <!-- </picture> -->
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- End Banner -->
+      <div class="text-mo-dau">
+        <div class="contaier">
+          <p style="margin-bottom: 20px">
+            Traffic accessibility is the wish of people with disabilities- the
+            wish for paths of hope, the path for them to integrate into
+            community, to access healthcare system, education and employment
+            prospects. However, inaccessible infrastructures have hindered
+            people with disabilities to realize their dreams.
+          </p>
+          <p style="margin-bottom: 20px">
+            The stories of a disabled athlete, a visually impaired former
+            journalist and a wheelchair – bound Master are real stories telling
+            us about the real lives of people with disabilities in Hanoi and Ho
+            Chi Minh city, their challenges and wishes for paths of hope
+          </p>
+          <p style="margin-bottom: 20px">
+            With an aim of enriching the experience and engagement of the
+            audiences, we have acquired multimedia storytelling techniques to
+            tell the story. The audience can access the stories by watching,
+            reading and listening at the same time and find themselves related
+            to the stories. We hope that our stories could give people an
+            insight of accessibility challenges faced by people with
+            disabilities so that we can lend our helping hands to them, who have
+            been working tirelessly for their better life and better society
+          </p>
+        </div>
+      </div>
+      <div class="b1-ss1 contaier">
+        <h1>The “Queen” athlete</h1>
+        <h2>Trying in vain to catch the bus…</h2>
+        <p style="margin-bottom: 20px">
+          Ho Thi Thu Mai, born in 1991 in Binh Phuoc province in Vietnam, has
+          suffered from lower limb disability since childhood and must walk on
+          crutches. She is one of 7 million disabled people residing in Vietnam.
+        </p>
+        <div class="bieu-do-box">
+          <a class="bieu-do" href="#popup1">
+            <img src="images/icon-xe-lan.png" alt="" style="width: 120px" />
+            <p style="font-weight: 600">
+              The proportion of people with disabilities in Vietnam
+            </p>
+          </a>
+        </div>
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <p style="font-size: 22px; font-weight: 500; padding-right: 40px">
+              The proportion of people with disabilities in Vietnam
+            </p>
+            <a class="close" href="#popup">&times;</a>
+            <div class="content">
+              <img src="images/b1/bieu-do.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="audio-box">
+          <div class="audio-text">
+            <div class="audio">
+              <div class="progress"></div>
+              <img
+                src="images/icon-play.png"
+                alt=""
+                class="play_play play_audio"
+                style="height: 25px; width: 25px; opacity: 0.6"
+              />
+              <img
+                src="images/icon-pause.png"
+                alt=""
+                style="height: 18px; width: 18px; opacity: 0.6"
+                class="play_pause play_audio hidden-item"
+              />
+              <div class="action" style="display: none">
+                <div class="time">
+                  <span class="current">0:00</span>
+                  /
+                  <span class="duration">0:00</span>
+                </div>
+              </div>
+            </div>
+
+            <audio
+              style="background-color: rebeccapurple"
+              hidden
+              src="images/audios/b1-audio1.mp3"
+            ></audio>
+            <div>
+              <p style="margin-bottom: 20px">
+                Mai becomes accustomed to commuting by bus during 4 years of
+                studying Information Technology at Nguyen Tat Thanh University.
+              </p>
+              <p>
+                “Taking the bus is quite stressful. Some buses will stop until
+                the passengers board. Some buses bypass stops. Sometimes I want
+                to cry. I'm almost late for school, yet some bus drivers
+                intentionally drop passengers off far away from the stops, then
+                quickly drive away. How could I get on the bus on time? I've had
+                to walk home several times because I missed the bus,” Mai said.
+              </p>
+            </div>
+          </div>
+          <div class="audio-img">
+            <div class="container-img">
+              <img src="images/b1/ss1-1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 50px 0">
+        <img src="images/b1/Layer1117.png" alt="" />
+      </div>
+
+      <div class="contaier">
+        <div class="ulatr">
+          <div class="container-img">
+            <img src="images/b1/ss2-1.jpg" alt="" />
+          </div>
+          <div class="container-img">
+            <img src="images/b1/ss2-2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="b1-ss2">
+          <div class="b1-ss2-left">
+            <div class="container-img">
+              <img src="images/b1/ss2-3.jpg" alt="" />
+            </div>
+            <p style="text-align: center; font-weight: 600; font-size: 24px">
+              No spaces for people with disabilities in bus shelters
+            </p>
+          </div>
+          <div class="b1-ss2-right">
+            <p>
+              Public transport enables people with disabilities to participate
+              in the daily commute, have easier access to the community, and
+              enjoy better social interactions
+            </p>
+            <p>
+              However, the absence of low-floor and disabled-friendly buses and
+              the general lack of accessibility infrastructure in bus terminals
+              prevents disabled people from accessing healthcare services,
+              employment prospects, as well as taking part in recreation
+              activities
+            </p>
+            <!-- <img src="images/icon-xe-bus.png" alt="" style="width: 100px" />
+            <img src="images/b1/ss2-4.png" alt="" class="img-full" /> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="contaier">
+        <div class="b1-ss3">
+          <div class="container-img">
+            <img src="images/b1/ss3-1.jpg" alt="" />
+          </div>
+          <p style="margin: 30px 0">
+            Wheelchair spaces on bus occupied by other passengers
+          </p>
+
+          <div class="container-img">
+            <img src="images/b1/ss3-2.png" alt="" />
+          </div>
+          <div class="group-image">
+            <div class="container-img">
+              <img src="images/b1/ss3-3.png" alt="" />
+            </div>
+            <div class="container-img">
+              <img src="images/b1/ss3-4.png" alt="" />
+            </div>
+            <div class="container-img">
+              <img src="images/b1/ss3-5.png" alt="" />
+            </div>
+          </div>
+          <div class="container-img">
+            <img src="images/b1/ss3-6.png" alt="" />
+          </div>
+          <p style="margin: 30px 0 30px">
+            Mai has no seat and must stand for over 10 kms
+          </p>
+        </div>
+      </div>
+
+      <div class="contaier">
+        <div class="b1-ss4">
+          <b class="b1-ss4-title">Death cheated twice…</b>
+          <p style="margin-bottom: 20px">
+            In the midst of the COVID-19 pandemic in Ho Chi Minh City, Mai's
+            tragedy occurred. In September, 2021, she was diagnosed with ovarian
+            cancer, liver failure, renal failure, sepsis, and hip necrosis
+          </p>
+          <p style="margin-bottom: 20px">
+            In 6 months, Mai underwent three surgeries, both major and minor
+            ones, at three major hospitals in Ho Chi Minh City in order to
+            remove tumors and abscesses from her body, all whilst struggling
+            with a blood infection.
+          </p>
+          <div class="container-img">
+            <img src="images/b1/ss4-1.png" alt="" />
+          </div>
+          <div class="b1-ss4-flex">
+            <div class="b1-ss4-flex-left">
+              <p style="margin-bottom: 20px">
+                However, her strong spirit helped the little girl overcome death
+                in a spectacular way. Despite this strength, osteonecrosis
+                causes joint destruction and deformity, stopping Mai from
+                walking as before and relying on a wheelchair for mobility.
+              </p>
+              <p style="margin-bottom: 20px">
+                - “I stayed at Tu Du hospital for more than a month. When the
+                infection rate dropped, I was discharged and sent to Cho Ray
+                hospital to treat my leg. However, replacing artificial hip
+                joint will cost about 50 million to 70 million, which I cannot
+                afford right away,” sadly she said.
+              </p>
+              <p style="margin-bottom: 20px">
+                During her stay in hospital, despite being financially supported
+                by the Sponsoring Association for the Disabled in her hometown,
+                the Association of People with Disabilities where she
+                participates in sporting activities, as well as teachers and
+                friends, Mai's family were heavily in debt.
+              </p>
+              <div style="text-align: center; margin-bottom: 20px">
+                * * * * * * * * * * * *
+              </div>
+            </div>
+            <div class="b1-ss4-flex-right">
+              <div class="container-img" style="margin-bottom: 30px">
+                <img src="images/b1/ss4-2.jpg" alt="" class="img-full" />
+              </div>
+            </div>
+          </div>
+          <p style="margin-bottom: 20px">
+            Mai’s health became worse. She lost her job but she remained very
+            determined. As soon as her health got better she collected her
+            saving money to buy an electric trike and started to sell lottery
+            tickets
+          </p>
+          <p style="margin-bottom: 30px">
+            Except for sick days, every day at 8 am, Mai departed from her poor
+            house, driving to every household to sell lottery tickets.
+          </p>
+        </div>
+      </div>
+      <div class="contaier" style="margin-bottom: 10px">
+        <div class="video-wrap">
+          <div class="video">
+            <video
+              controls
+              src="images/videos/bai1-video1.mp4"
+              type="video/mp4"
+            ></video>
+          </div>
+        </div>
+      </div>
+      <div class="contaier">
+        <div class="b1-ss5">
+          <div class="b1-ss5-flex">
+            <div class="container-img">
+              <img src="images/b1/ss5-1.png" alt="" />
+            </div>
+            <div class="container-img">
+              <img src="images/b1/ss5-2.png" alt="" />
+            </div>
+            <div class="container-img">
+              <img src="images/b1/ss5-3.png" alt="" />
+            </div>
+          </div>
+          <div class="container-img" style="margin-bottom: 30px">
+            <img src="images/b1/ss5-4.png" alt="" />
+          </div>
+          <p style="margin-bottom: 20px">
+            Every day, Mai receives 280 tickets from a “retailer”, who is also a
+            disabled person. If she could sell all of the tickets, she could
+            pocket VND280,000. After deducting meal and accommodation expenses,
+            she is able to save about VND100,000 for upcoming surgeries. But if
+            she was sick or the trike broke down, it could cost her millions of
+            VND.
+          </p>
+          <p style="margin-bottom: 20px">
+            What is really stressful to Mai every day is the commute on the
+            congested and bumpy route with lots of potholes without
+            wheelchair-accessible sidewalks.
+          </p>
+          <p style="margin-bottom: 20px">
+            Mai said that she is most scared of rainy days because it’s
+            dangerous for her to get involved in traffic. Also, she therefore
+            wouldn’t sell the tickets on such days and risk losing millions of
+            VND.
+          </p>
+          <div
+            style="
+              margin-bottom: 6px;
+              display: flex;
+              gap: 20px;
+              align-items: center;
+            "
+          >
+            <img src="images/icon-quotes.png" alt="" style="width: 50px" />
+            <div
+              style="
+                height: 2px;
+                width: 250px;
+                background-color: rgb(139, 130, 130);
+                transform: translateY(5px);
+              "
+            ></div>
+          </div>
+          <p style="margin-bottom: 30px; font-size: 32px">
+            There’s no way to force them to watch my tricycle. We are dependent
+            on them so just accept that. There are different types of people in
+            this society and many of them are kind and care about us!
+          </p>
+          <p style="margin-bottom: 30px">
+            On rainy days, potholes are flooded with rain water so I couldn’t
+            see anything. If my trike hits a pothole, it could flip over,
+            falling onto the road and could possibly be crushed by other
+            vehicles. I am really stressed but the only thing I can do is pray.
+          </p>
+          <p>
+            There was a time when I went to the Hospital of Traumatology and
+            Orthopedics in Tran Hung Dao street in District 5 of Ho Chi Minh
+            City and no parking zone accepted my tricycle because of its size.
+            Therefore, I had to leave my tricycle on the road to go to the
+            hospital for examination.
+          </p>
+        </div>
+      </div>
+
+      <div class="contaier">
+        <div class="b1-ss6">
+          <b class="b1-ss6-title">Can’t wait to visit the Capital of Hanoi…</b>
+          <p style="margin-bottom: 20px">
+            Late afternoon is the best time of the day. Mai can play sports with
+            friends just like her. Three times per week, 2 hours each, Mai
+            practices javelin throwing, discus throwing and weightlifting to
+            prepare for the annual Para Games.
+          </p>
+
+          <p style="margin-bottom: 20px">
+            The Para Games are annually organized in different cities, so Mai
+            and her friends have the chance to travel and experience multiple
+            transportations such as trains or airplanes.
+          </p>
+          <p style="margin-bottom: 30px">
+            “Travelling to Da Nang city by train was fascinating. Some of my
+            friends had to travel on their own, which was really exhausted
+            because train station and carriage are too high to get on by
+            themselves. Mr. Phuc, our coach, had to carry each of them onto the
+            train,” Mai said.
+          </p>
+          <div class="container-img">
+            <img src="images/b1/ss6-1.png" alt="" />
+          </div>
+          <div class="b1-ss6-flex">
+            <div class="b1-ss6-flex-left">
+              <p style="margin-bottom: 20px">
+                Perhaps, the greatest happiness for Mai and other athletes with
+                disabilities is the first visit to the Capital of Hanoi in 2022.
+                Mai spent her whole week searching for information about the
+                best sightseeing in Hanoi, instead of preparing for the
+                competition.
+              </p>
+              <p style="margin-bottom: 20px">
+                Mai’s achievements in the Para Games include 6 gold medals and
+                dozens of silver medals.
+              </p>
+              <p>
+                Attending the 2023 National Championships of Athletics recently
+                held in Ho Chi Minh City, although I only won two Silver Awards,
+                I did not feel sad because after several surgeries, my joints
+                were damaged so I could no longer throw accurately
+              </p>
+            </div>
+            <div class="b1-ss6-flex-right">
+              <div class="container-img">
+                <img src="images/b1/ss6-2.jpg" alt="" />
+              </div>
+              <p>
+                Ho Thi Thu Mai received the winning 2 Silver medals in the Para
+                Games 2023.
+              </p>
+            </div>
+          </div>
+          <div class="container-img">
+            <img src="images/b1/ss6-3.jpg" alt="" />
+          </div>
+        </div>
+        <div style="height: 50px"></div>
+      </div>
+
+      <div class="contaier">
+        <div class="b1-ss6-quote">
+          <div
+            style="
+              margin-bottom: 6px;
+              display: flex;
+              gap: 20px;
+              align-items: center;
+            "
+          >
+            <img src="images/icon-quotes.png" alt="" style="width: 50px" />
+            <div
+              style="
+                height: 2px;
+                width: 250px;
+                background-color: rgb(139, 130, 130);
+                transform: translateY(5px);
+              "
+            ></div>
+          </div>
+          <p>
+            After deaths cheated twice, being alive is already a great
+            happiness. Living with gratitude and enjoying present moments are
+            motivations for me to overcome daily difficulties and hardships.
+          </p>
+        </div>
+        <p style="margin: 30px 0 20px">
+          Mai said, after experiencing the line between life and death, every
+          morning I wake up, I feel happy and grateful for still being able to
+          breathe! I am grateful that I am still alive, still able to go selling
+          lottery tickets every day, meeting my friends and my teachers. One
+          day, I will save enough money for the surgery. If I am lucky enough, I
+          would walk on my own feet, no need of any wheelchair.
+        </p>
+        <p>
+          When one door shuts, another door will open. Mai believes that if she
+          thinks positive, then miracle will come because there are still many
+          kind and warm-hearted people out there always willing to help disabled
+          people like her to engage in the community.
+        </p>
+      </div>
+      <div class="contaier">
+        <div style="display: flex; gap: 10px; margin-top: 40px">
+          <div style="flex: 0 0 120px; max-width: 120px">Xem thêm:</div>
+          <div style="flex-grow: 1">
+            <a
+              style="display: block"
+              href="https://vovgiaothong.vn/mo-canh-cua-cho-nguoi-khuyet-tat-tu-quyen-tiep-can-giao-thong-ema33955.html"
+              target="_blank"
+              >Mở cánh cửa cho người khuyết tật từ quyền tiếp cận giao thông</a
+            >
+            <a
+              style="display: block"
+              href="https://vovgiaothong.vn/ha-tang-giao-thong-cho-nguoi-khuyet-tat-khung-phap-ly-day-du-vi-sao-thuc-hien-kho-ema33954.html"
+              >Hạ tầng giao thông cho người khuyết tật</a
+            >
+          </div>
+        </div>
+      </div>
+      <div style="height: 60px"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/main1.js"></script>
+  </body>
+</html>
