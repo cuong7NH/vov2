@@ -108,6 +108,7 @@ body {
   position: relative;
   z-index: 1000;
   font-size: 22px;
+  text-align: center;
 }
 @media screen and (max-width: 860px) {
   .header-tab-item a {
