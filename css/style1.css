@@ -78,6 +78,16 @@
 .b1-banner1 {
   margin: 40px 0;
 }
+@media screen and (max-width: 900px) {
+  .title-bd {
+    font-size: 16px !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .title-bd a {
+    font-size: 16px !important;
+  }
+}
 
 /* Session 2 */
 .b1-ss2 {
