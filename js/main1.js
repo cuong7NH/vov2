@@ -91,8 +91,6 @@ let duration = document.querySelector(".duration");
 let current = document.querySelector(".current");
 let list_span = document.querySelectorAll(".progress span");
 let volume_span = document.querySelectorAll(".volume span");
-console.log("list_span", list_span);
-
 let timeFormat = (time) => {
   second = Math.floor(time % 60);
   minute = Math.floor((time / 60) % 60);
