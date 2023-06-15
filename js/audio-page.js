@@ -164,8 +164,8 @@ play_pause3.addEventListener("click", () => {
 });
 
 audio3.addEventListener("timeupdate", () => {
-  time_current = audio1.currentTime;
-  time_duration = audio1.duration;
+  time_current = audio3.currentTime;
+  time_duration = audio3.duration;
   let position = Math.floor((time_current * 100) / time_duration);
   // current.textContent = timeFormat(time_current);
   for (k = 0; k <= position; k++) {
@@ -192,3 +192,113 @@ list_span3.forEach((element, index) => {
 });
 
 // END AUDIO
+
+// Bấm mũi tên trái để nghe câu chuyện 1: Chuyện của Mai: “Nữ hoàng” vận động viên
+// Bấm mũi tên lên để nghe câu chuyện 2: Chuyện của ông Quý: Những bước chân không mỏi
+// Bấm mũi tên phải để nghe câu chuyện 3: Chuyện của Tùng: Người góp phần mở những lối đi hạnh phúc
+// Bấm mũi tên xuống để nghe lại hướng dẫn.
+
+window.addEventListener(
+  "keydown",
+  (event) => {
+    console.log("event", event.key);
+    if (event.defaultPrevented) {
+      return; // Do nothing if the event was already processed
+    }
+    let playBtn1 = document.querySelector(".play_play1");
+    let pauseBtn1 = document.querySelector(".play_pause1");
+    let playBtn2 = document.querySelector(".play_play2");
+    let pauseBtn2 = document.querySelector(".play_pause2");
+    let playBtn3 = document.querySelector(".play_play3");
+    let pauseBtn3 = document.querySelector(".play_pause3");
+    let audio1 = document.querySelector("#audio1");
+    let audio2 = document.querySelector("#audio2");
+    let audio3 = document.querySelector("#audio3");
+
+    switch (event.key) {
+      case "ArrowDown":
+        break;
+      case "ArrowUp":
+        // ấm mũi tên lên để nghe câu chuyện 2
+        audio2.play();
+        playBtn2.classList.add("hidden-item");
+        pauseBtn2.classList.remove("hidden-item");
+        // reset audio 1
+        audio1.pause();
+        playBtn1.classList.remove("hidden-item");
+        pauseBtn1.classList.add("hidden-item");
+        list_span1.forEach((e) => {
+          e.classList.remove("active");
+        });
+        audio1.currentTime = 0;
+        // reset audio 3
+        audio3.pause();
+        playBtn3.classList.remove("hidden-item");
+        pauseBtn3.classList.add("hidden-item");
+        list_span3.forEach((e) => {
+          e.classList.remove("active");
+        });
+        audio3.currentTime = 0;
+
+        break;
+      case "ArrowLeft":
+        // Bấm mũi tên trái để nghe câu chuyện 1:
+        audio1.play();
+        playBtn1.classList.add("hidden-item");
+        pauseBtn1.classList.remove("hidden-item");
+        // reset
+        audio2.pause();
+        playBtn2.classList.remove("hidden-item");
+        pauseBtn2.classList.add("hidden-item");
+        list_span2.forEach((e) => {
+          e.classList.remove("active");
+        });
+        audio2.currentTime = 0;
+        // reset
+        audio3.pause();
+        playBtn3.classList.remove("hidden-item");
+        pauseBtn3.classList.add("hidden-item");
+        list_span3.forEach((e) => {
+          e.classList.remove("active");
+        });
+        audio3.currentTime = 0;
+        break;
+      case "ArrowRight":
+        // Bấm mũi tên phải để nghe câu chuyện 3:
+        audio3.play();
+        playBtn3.classList.add("hidden-item");
+        pauseBtn3.classList.remove("hidden-item");
+        // reset
+        audio2.pause();
+        playBtn2.classList.remove("hidden-item");
+        pauseBtn2.classList.add("hidden-item");
+        list_span2.forEach((e) => {
+          e.classList.remove("active");
+        });
+        audio2.currentTime = 0;
+        // reset
+        audio1.pause();
+        playBtn1.classList.remove("hidden-item");
+        pauseBtn1.classList.add("hidden-item");
+        list_span1.forEach((e) => {
+          e.classList.remove("active");
+        });
+        audio1.currentTime = 0;
+
+        break;
+      case "Enter":
+        // Do something for "enter" or "return" key press.
+        break;
+      case " ":
+        // Do something for "esc" key press.
+
+        break;
+      default:
+        return; // Quit when this doesn't handle the key event.
+    }
+
+    // Cancel the default action to avoid it being handled twice
+    event.preventDefault();
+  },
+  true
+);
