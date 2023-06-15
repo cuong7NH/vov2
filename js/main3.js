@@ -344,3 +344,9 @@ list_span5.forEach((element, index) => {
 });
 
 // END AUDIO
+
+
+// document.addEventListener("keydown", (e) => {
+//   console.log(e, e.key);
+ 
+// });

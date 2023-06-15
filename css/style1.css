@@ -300,7 +300,7 @@
 }
 .image-comparison .banner-text {
   position: absolute;
-  top: 70%;
+  top: 80%;
   transform: translateY(-50%);
   right: 60px;
   z-index: 999;
