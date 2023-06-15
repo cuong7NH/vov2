@@ -1,0 +1,135 @@
+* {
+  text-align: start;
+}
+body {
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+.audio-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 100px 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.audio-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.audio-player-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.audio-player-box .audio-player-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 760px;
+  position: relative;
+}
+
+.audio-player-box .audio-player-item .audio-player-item-text {
+  color: #000;
+  font-weight: 500;
+  background-color: #f6cb5f;
+  border: 3px solid #d3ccba;
+  padding: 10px;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+.audio-item-box {
+  height: 60px;
+  width: 60px;
+  background-color: aliceblue;
+  border: 2px solid #f6cb5f;
+  border-radius: 5px;
+}
+.audio-item {
+  padding: 10px;
+  transform: translate(0px, -21px) scale(0.7);
+}
+
+.audio-item::after {
+  content: "";
+  position: absolute;
+  background-color: #ebebeb;
+  height: 0px;
+  top: 0;
+  left: -30px;
+  right: 37px;
+}
+.audio-item::before {
+  content: "";
+  position: absolute;
+  background-color: #ebebeb;
+  height: 0px;
+  bottom: 0;
+  left: -30px;
+  right: 37px;
+}
+
+.desc {
+  margin-top: 45px;
+}
+
+.item-text2 {
+  display: none;
+}
+
+@media screen and (max-width: 820px) {
+  .audio-player-box {
+    gap: 60px;
+  }
+  .audio-player-box .audio-player-item .audio-player-item-text span {
+    display: none;
+  }
+  .item-text2 {
+    display: block;
+    position: absolute;
+    top: -36px;
+    left: 10px;
+  }
+  .audio-title {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+  .audio-box {
+    padding: 60px 20px;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 700px) {
+  .audio-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .audio-title {
+    text-align: center !important;
+    font-size: 22px;
+  }
+  .item-text2 {
+    font-size: 18px;
+    top: -30px;
+  }
+  .audio-player-box .audio-player-item .audio-player-item-text {
+    font-size: 18px;
+  }
+  .desc div {
+    font-size: 18px;
+  }
+  a {
+    font-size: 18px !important;
+  }
+}
