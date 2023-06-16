@@ -82,7 +82,6 @@ const handleResetAudio = (audioNumber) => {
   }
 };
 
-console.log("pauseBtn1", pauseBtn1);
 pauseBtn1.addEventListener("click", () => {
   console.log("click play");
   if (audio1.paused) {
@@ -101,13 +100,19 @@ pauseBtn1.addEventListener("click", () => {
 });
 
 audio1.addEventListener("timeupdate", () => {
-  console.log("timeupdate1");
   time_current = audio1.currentTime;
   time_duration = audio1.duration;
+  console.log("time_duration", time_duration, time_current);
   let position = Math.floor((time_current * 100) / time_duration);
   // current.textContent = timeFormat(time_current);
   for (k = 0; k <= position; k++) {
     listSpan1[k].classList.add("active");
+  }
+  if (time_duration - time_current <= 1) {
+    handleResetAudio(1);
+    audio2.play();
+    playBtn2.classList.add("hidden-item");
+    pauseBtn2.classList.remove("hidden-item");
   }
 });
 
@@ -156,6 +161,12 @@ audio2.addEventListener("timeupdate", () => {
   let position = Math.floor((time_current * 100) / time_duration);
   for (k = 0; k <= position; k++) {
     listSpan2[k].classList.add("active");
+  }
+  if (time_duration - time_current <= 1) {
+    handleResetAudio(2);
+    audio3.play();
+    playBtn3.classList.add("hidden-item");
+    pauseBtn3.classList.remove("hidden-item");
   }
 });
 
@@ -208,6 +219,9 @@ audio3.addEventListener("timeupdate", () => {
   for (k = 0; k <= position; k++) {
     listSpan3[k].classList.add("active");
   }
+  if (time_duration - time_current <= 1) {
+    handleResetAudio(3);
+  }
 });
 
 listSpan3.forEach((element, index) => {
@@ -243,7 +257,7 @@ startClick.addEventListener("click", () => {
   introPage.classList.remove("display-none");
   setTimeout(() => {
     audioIntro1.play();
-  }, 500);
+  }, 200);
 });
 
 const modauBoxLeft = document.querySelector(".modau-box-left");
@@ -257,7 +271,7 @@ const handleOpenNKTpage = () => {
     audioIntro2.play();
     audioIntro1.pause();
     audioIntro1.currentTime = 0;
-  }, 500);
+  }, 200);
 };
 
 modauBoxLeft.addEventListener("click", () => {
