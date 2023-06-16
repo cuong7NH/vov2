@@ -84,6 +84,9 @@
 .desc .tit {
   font-size: 24px;
 }
+.desc b {
+  font-weight: 500;
+}
 .item-text2 {
   display: none;
 }
