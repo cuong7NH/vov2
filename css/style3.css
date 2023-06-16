@@ -356,3 +356,14 @@
 .mySlides {
   display: none;
 }
+
+.author {
+  padding-bottom: 60px;
+  letter-spacing: 0.4px;
+}
+.author div {
+  margin-bottom: 8px;
+}
+.author b {
+  font-weight: 500;
+}
