@@ -61,6 +61,18 @@
   flex: 0 0 calc(36% - 30px);
   max-width: calc(36% - 30px);
 }
+
+@media screen and (max-width: 600px) {
+  .b1-ss1 .audio-text {
+    flex-direction: column;
+    gap: 0px !important;
+  }
+  .b1-ss1 .audio-text .audio {
+    transform: scale(0.6);
+  }
+}
+
+
 @media screen and (max-width: 900px) {
   .b1-ss1 .audio-box {
     flex-direction: column-reverse;
@@ -221,6 +233,9 @@
     gap: 20px;
     justify-content: center;
   }
+  .b1-ss4-flex-left-sao {
+    display: none;
+  }
 }
 
 .b1-ss5 .b1-ss5-flex {
@@ -310,7 +325,7 @@
 }
 .image-comparison .banner-text h1 {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 60px;
   background-color: #fff;
   border-radius: 6px;
   margin-bottom: 6px;
