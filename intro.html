@@ -7,65 +7,158 @@
     <link rel="stylesheet" href="css/init.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/modau.css" />
+    <link rel="stylesheet" href="css/audio.css" />
+    <link rel="stylesheet" href="css/audio-page.css" />
     <title>Nguyện ước về con đường hy vọng</title>
   </head>
   <body onload="loadPageFunction()">
-    <!-- <audio muted="true" hidden src="images/audios/b1-audio1.mp3"></audio> -->
-    <!-- <audio id="musicplayer" autoplay>
-        <source src="images/audios/b1-audio1.mp33" />
-      </audio> -->
-    <a href="audio.html" class="modau-box modau-box-left">
-      <div class="modau-item">
-        <!-- <iframe src="images/audios/b1-audio1.mp3" allow="autoplay"></iframe> -->
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
-            height: 100px;
-            background-color: #ccc;
-          "
-        >
-          Icon
+    <!-- Start Loading Page -->
+    <div id="loading-page" class="loading-page">
+      <img src="images/icon-xe-lan.png" alt="" style="width: 120px" />
+      <div class="click-start">Click để bắt đầu</div>
+    </div>
+    <!-- End Loading Page -->
+    <!-- Page intro -->
+    <div class="intro-page display-none">
+      <audio id="audio-intro" hidden src="images/audios/b1-audio1.mp3"></audio>
+      <audio id="audio-intro2" hidden src="images/audios/b2-audio1.mp3"></audio>
+      <a class="modau-box modau-box-left" style="text-decoration: none">
+        <div class="modau-item">
+          <!-- <iframe src="images/audios/b1-audio1.mp3" allow="autoplay"></iframe> -->
+          <div class="icon-eye">
+            <img src="images/icon-mat-nham.png" alt="" />
+          </div>
+          <div class="modau-item-text modau-item-text-left">
+            Giao diện cho người khiếm thị
+          </div>
         </div>
-        <div>Giao diện cho người khiếm thị</div>
-      </div>
-    </a>
+      </a>
 
-    <a href="phan1.html" class="modau-box modau-box-right">
-      <div  class="modau-item">
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
-            height: 100px;
-            background-color: #ccc;
-          "
-        >
-          Icon
+      <a
+        href="phan1.html"
+        class="modau-box modau-box-right"
+        style="text-decoration: none"
+      >
+        <div class="modau-item">
+          <div class="icon-eye">
+            <img src="images/icon-mat-mo.png" alt="" />
+          </div>
+          <div class="modau-item-text modau-item-text-right">
+            Giao diện cho người mắt sáng
+          </div>
         </div>
-        <div>Giao diện cho người mat sáng</div>
+      </a>
+    </div>
 
+    <!-- Page nkt -->
+    <div class="audio-box display-none">
+      <div style="max-width: 900px; width: 100%; margin: 0 auto">
+        <h1 class="audio-title">Nguyện ước về con đường hy vọng</h1>
+        <div class="audio-player-box">
+          <div class="audio-player-item">
+            <div class="item-text2">1. Chuyện của Mai</div>
+            <div class="audio-player-item-text">
+              <span>1. Chuyện của Mai:</span> "Nữ hoàng" vận động viên
+            </div>
+            <div class="audio-item-box">
+              <div class="audio1 audio-item">
+                <div class="progress1"></div>
+                <img
+                  src="images/icon-play.png"
+                  alt=""
+                  class="play_play1 play_audio1"
+                  style="height: 25px; width: 25px; opacity: 0.6"
+                />
+                <img
+                  src="images/icon-pause.png"
+                  alt=""
+                  style="height: 18px; width: 18px; opacity: 0.6"
+                  class="play_pause1 play_audio1 hidden-item"
+                />
+              </div>
+              <audio
+                id="audio1"
+                style="background-color: rebeccapurple"
+                hidden
+                src="images/audios/b3-audio1.mp3"
+              ></audio>
+            </div>
+          </div>
+          <div class="audio-player-item">
+            <div class="item-text2">2. Chuyện của ông Quý</div>
+            <div class="audio-player-item-text">
+              <span>2. Chuyện của ông Quý:</span> Những bước chân không mỏi
+            </div>
+            <div class="audio-item-box">
+              <div class="audio2 audio-item">
+                <div class="progress2"></div>
+                <img
+                  src="images/icon-play.png"
+                  alt=""
+                  class="play_play2 play_audio2"
+                  style="height: 25px; width: 25px; opacity: 0.6"
+                />
+                <img
+                  src="images/icon-pause.png"
+                  alt=""
+                  style="height: 18px; width: 18px; opacity: 0.6"
+                  class="play_pause2 play_audio2 hidden-item"
+                />
+              </div>
+              <audio
+                id="audio2"
+                style="background-color: rebeccapurple"
+                hidden
+                src="images/audios/b3-audio2.mp3"
+              ></audio>
+            </div>
+          </div>
+          <div class="audio-player-item">
+            <div class="item-text2">3. Chuyện của Tùng</div>
+            <div class="audio-player-item-text">
+              <span>3. Chuyện của Tùng:</span> Người góp phần mở những lối đi
+              hạnh phúc
+            </div>
+            <div class="audio-item-box">
+              <div class="audio3 audio-item">
+                <div class="progress3"></div>
+                <img
+                  src="images/icon-play.png"
+                  alt=""
+                  class="play_play3 play_audio3"
+                  style="height: 25px; width: 25px; opacity: 0.6"
+                />
+                <img
+                  src="images/icon-pause.png"
+                  alt=""
+                  style="height: 18px; width: 18px; opacity: 0.6"
+                  class="play_pause3 play_audio3 hidden-item"
+                />
+              </div>
+              <audio
+                id="audio3"
+                style="background-color: rebeccapurple"
+                hidden
+                src="images/audios/b3-audio3.mp3"
+              ></audio>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 20px">
+          <a href="phan1.html" style="color: #fff"
+            >Giao diện cho người mắt sáng</a
+          >
+        </div>
       </div>
-    </a>
+      <div class="desc">
+        <div style="font-weight: 600">Nhóm tác giả</div>
+        <div>Phóng viên: Hải Hà, Anh Thư</div>
+        <div>Vẽ minh họa: Mai Phương</div>
+        <div>Thiết kế UI/UX: Uyển Hương, Quang Huy</div>
+        <div>Lập trình viên: Nguyễn Cường</div>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
     <script src="js/modau.js"></script>
-    <script>
-      var audioCtx = new AudioContext();
-      var oscillator = audioCtx.createOscillator();
-      var gain = audioCtx.createGain();
-
-      oscillator.connect(gain);
-      gain.connect(audioCtx.destination);
-
-      gain.gain.value = 0.02;
-
-      oscillator.start();
-      oscillator.stop(audioCtx.currentTime + 5);
-    </script>
   </body>
 </html>

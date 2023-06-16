@@ -396,7 +396,6 @@ button {
 
 .hidden-page {
   visibility: hidden !important;
-  transition: 0.3;
 }
 
 /* AUDIO CSS */

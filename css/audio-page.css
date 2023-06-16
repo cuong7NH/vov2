@@ -1,11 +1,7 @@
 * {
   text-align: start;
 }
-body {
-  padding: 0;
-  background-color: #000;
-  color: #fff;
-}
+
 .audio-box {
   display: flex;
   flex-direction: column;
@@ -14,6 +10,8 @@ body {
   padding: 100px 20px;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #000;
+  color: #fff;
 }
 
 .audio-title {
@@ -79,7 +77,9 @@ body {
 }
 
 .desc {
-  margin-top: 45px;
+  max-width: 900px;
+  width: 100%;
+  margin: 45px auto 0;
 }
 
 .item-text2 {
