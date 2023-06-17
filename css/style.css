@@ -399,3 +399,15 @@ button {
 }
 
 /* AUDIO CSS */
+
+.max-720 {
+  max-width: 720px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+p {
+  max-width: 720px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
