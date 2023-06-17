@@ -411,3 +411,84 @@ p {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+.title-1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 44px;
+  font-weight: bold;
+  position: relative;
+}
+
+.title-2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+}
+
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid rgb(248, 193, 91); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 6.5s steps(40, end), blink-caret 4.75s infinite;
+  animation-delay: 4s;
+  font-family: "Roboto Slab", serif !important;
+  letter-spacing: 0.1em; /* Adjust as needed */
+
+  text-transform: uppercase;
+  font-size: 52px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  text-align: center;
+  align-self: flex-end;
+  padding: 0 12px;
+  
+}
+
+.typewriter .banner-text-1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 6.5s steps(40, end), blink-caret 4.75s infinite;
+  animation-delay: 4s;
+  font-size: 28px;
+  max-width: 100%;
+  color: #fff;
+  text-align: right;
+  align-self: flex-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+ @media screen and (max-width: 1000px) {
+  .typewriter h1 {
+      font-size: 46px;
+  }
+  .typewriter .banner-text-1 {
+    font-size: 22px;
+}
+}

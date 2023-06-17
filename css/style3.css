@@ -13,31 +13,46 @@
   gap: 20px;
 }
 .b3-banner .b3-banner-text h1 {
-  font-size: 32px;
+  font-size: 45px;
   background-color: #fff;
-  padding: 10px;
+  padding: 10px 16px;
+  line-height: 1.07;
   border-radius: 6px;
   align-self: self-start;
   text-transform: uppercase;
+  font-family: "Roboto Slab", serif !important;
 }
 .b3-banner .b3-banner-text p {
   background: #e5dfdf85;
   padding: 10px;
   border-radius: 10px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 820px) {
   .b3-banner .b3-banner-text {
+    left: 20px;
+    right: 20px;
     gap: 12px;
   }
   .b3-banner .b3-banner-text h1 {
-    font-size: 24px;
+    font-size: 40px;
   }
   .b3-banner .b3-banner-text p {
     font-size: 16px;
   }
 }
 
+.b3-ss1 .b3-banner-mb2 {
+  font-size: 48px !important;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif !important;
+  position: relative;
+  display: none;
+}
 @media screen and (max-width: 700px) {
   .b3-banner .b3-banner-text {
     max-width: 500px;
@@ -45,10 +60,32 @@
     right: 20px;
   }
   .b3-banner .b3-banner-text h1 {
-    /* display: none; */
-    font-size: 20px;
+    display: none;
+  }
+  .b3-ss1 .b3-banner-mb2 {
+    display: block;
+  }
+  .b3-ss1 .b3-banner-mb2 h1 {
+    font-family: "Roboto Slab", serif !important;
   }
 }
+@media screen and (max-width: 500px) {
+  .b3-ss1 .b3-banner-mb2 h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .b3-ss1 .b3-banner-mb2-e h1 {
+    font-size: 26px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .b3-ss1 .b3-banner-mb2-e h1 {
+    font-size: 24px !important;
+  }
+}
+
 .first-text {
   display: none;
   text-align: center;
