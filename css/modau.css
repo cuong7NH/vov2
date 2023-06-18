@@ -117,7 +117,7 @@ body {
 .loading-page {
   height: 120vh;
   width: 100vw;
-  background-image: url(/images/cover.jpg);
+  background-image: url("/images/cover.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
