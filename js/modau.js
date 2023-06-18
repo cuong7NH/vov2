@@ -34,16 +34,19 @@ function loadPageFunction() {}
 
 // Audio 1
 let audio1 = document.querySelector("#audio1");
+let audioBtn1 = document.querySelector("#audio1-all");
 let pauseBtn1 = document.querySelector(".play_pause1");
 let playBtn1 = document.querySelector(".play_play1");
 let listSpan1 = document.querySelectorAll(".progress1 span");
 // Audio 2
 let audio2 = document.querySelector("#audio2");
+let audioBtn2 = document.querySelector("#audio2-all");
 let pauseBtn2 = document.querySelector(".play_pause2");
 let playBtn2 = document.querySelector(".play_play2");
 let listSpan2 = document.querySelectorAll(".progress2 span");
 // Audio 3
 let audio3 = document.querySelector("#audio3");
+let audioBtn3 = document.querySelector("#audio3-all");
 let pauseBtn3 = document.querySelector(".play_pause3");
 let playBtn3 = document.querySelector(".play_play3");
 let listSpan3 = document.querySelectorAll(".progress3 span");
@@ -82,7 +85,7 @@ const handleResetAudio = (audioNumber) => {
   }
 };
 
-pauseBtn1.addEventListener("click", () => {
+audioBtn1.addEventListener("click", () => {
   console.log("click play");
   if (audio1.paused) {
     audio1.play();
@@ -139,7 +142,7 @@ listSpan1.forEach((element, index) => {
  * Audio player controls 222222222222222222222
  */
 
-pauseBtn2.addEventListener("click", () => {
+audioBtn2.addEventListener("click", () => {
   if (audio2.paused) {
     audio2.play();
     playBtn2.classList.add("hidden-item");
@@ -193,7 +196,7 @@ listSpan2.forEach((element, index) => {
  * Audio player controls 33333333333333333333
  */
 
-pauseBtn3.addEventListener("click", () => {
+audioBtn3.addEventListener("click", () => {
   console.log("click play");
 
   if (audio3.paused) {
@@ -260,7 +263,7 @@ startClick.addEventListener("click", () => {
   }, 200);
 });
 
-const modauBoxLeft = document.querySelector(".modau-box-left");
+const modauBoxLeft = document.querySelector(".modau-item-text-left");
 
 const handleOpenNKTpage = () => {
   loadingPage.classList.add("display-none");
@@ -280,7 +283,7 @@ modauBoxLeft.addEventListener("click", () => {
 
 window.addEventListener("keydown", (event) => {
   console.log("event.key", event.key);
-  if (event.key === "ArrowDown") {
+  if (event.key === "2") {
     if (!isInNKTPage) {
       // Nếu bạn muốn trải nghiệm giao diện cho người khiếm thị, mời bấm mũi tên xuống.
       handleOpenNKTpage();
@@ -295,7 +298,7 @@ window.addEventListener("keydown", (event) => {
     }
   }
   // Bấm mũi tên trái để nghe câu chuyện 1: Chuyện của Mai: “Nữ hoàng” vận động viên
-  if (event.key === "ArrowLeft") {
+  if (event.key === "1") {
     if (isInNKTPage) {
       audio1.currentTime = 0;
       audio1.play();
@@ -326,7 +329,7 @@ window.addEventListener("keydown", (event) => {
     }
   }
   // Bấm mũi tên lên để nghe câu chuyện 2: Chuyện của ông Quý: Những bước chân không mỏi
-  if (event.key === "ArrowUp") {
+  if (event.key === "5") {
     if (isInNKTPage) {
       audio2.currentTime = 0;
       audio2.play();
@@ -342,7 +345,7 @@ window.addEventListener("keydown", (event) => {
     }
   }
   // Bấm mũi tên phải để nghe câu chuyện 3: Chuyện của Tùng: Người góp phần mở những lối đi hạnh phúc
-  if (event.key === "ArrowRight") {
+  if (event.key === "3") {
     if (isInNKTPage) {
       audio3.currentTime = 0;
       audio3.play();

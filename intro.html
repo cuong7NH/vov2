@@ -20,7 +20,7 @@
   <body onload="loadPageFunction()">
     <!-- Start Loading Page -->
     <div id="loading-page" class="loading-page">
-      <!-- <img src="images/icon-xe-lan.png" alt="" style="width: 120px" /> -->
+      <!-- <img src="images/cover.jpg" alt="" style="display: block; height: 100%; width: 100%;"/> -->
       <div class="click-start area">Click để bắt đầu</div>
     </div>
     <!-- End Loading Page -->
@@ -28,7 +28,7 @@
     <div class="intro-page display-none">
       <audio id="audio-intro" hidden src="images/audios/intro1.mp3"></audio>
       <audio id="audio-intro2" hidden src="images/audios/intro2.mp3"></audio>
-      <a class="modau-box modau-box-left" style="text-decoration: none">
+      <div class="modau-box modau-box-left" style="text-decoration: none">
         <div class="modau-item">
           <!-- <iframe src="images/audios/b1-audio1.mp3" allow="autoplay"></iframe> -->
           <div class="icon-eye">
@@ -36,49 +36,61 @@
           </div>
           <div
             class="modau-item-text modau-item-text-left"
-            style="font-weight: 600"
+            style="
+              font-weight: 600;
+              cursor: pointer;
+              text-align: center;
+              margin-left: 10px;
+              margin-right: 10px;
+              z-index: 10;
+            "
           >
-            <!-- Giao diện cho người khiếm thị -->
-            Nghe Podcast
+            Giao diện cho người khiếm thị
+            <!-- Nghe Podcast -->
           </div>
         </div>
-      </a>
+      </div>
 
-      <a
-        href="phan1.html"
-        class="modau-box modau-box-right"
-        style="text-decoration: none"
-      >
+      <div class="modau-box modau-box-right" style="text-decoration: none">
         <div class="modau-item">
           <div class="icon-eye">
             <img src="images/icon-mat-mo.png" alt="" />
           </div>
-          <div
+          <a
+            href="phan1.html"
             class="modau-item-text modau-item-text-right"
-            style="font-weight: 600"
+            style="
+              font-weight: 600;
+              text-decoration: none;
+              cursor: pointer;
+              text-align: center;
+              margin-left: 10px;
+              margin-right: 10px;
+              z-index: 10;
+            "
           >
-            <!-- Giao diện cho người mắt sáng -->
-            Nội dung đa phương tiện
-          </div>
+            Giao diện cho người không khiếm thị
+            <!-- Nội dung đa phương tiện -->
+          </a>
         </div>
-      </a>
+      </div>
     </div>
 
     <!-- Page nkt -->
     <div class="audio-box display-none">
       <div style="max-width: 900px; width: 100%; margin: 0 auto">
         <h1 class="audio-title">Nguyện ước về con đường hy vọng</h1>
-        <div style="margin-bottom: 60px;">
+        <div style="margin-bottom: 60px">
           Nguyện ước về con đường hy vọng là câu chuyện kể về những khó khăn
           trên con đường mưu sinh, hòa nhập cộng đồng của 3 người khuyết tật
           gồm: một nữ vận động viên khuyết tật bị ung thư, một cựu nhà báo khiếm
           thị và một Thạc sĩ ngồi xe lăn....
         </div>
         <div class="audio-player-box">
-          <div class="audio-player-item">
+          <div class="audio-player-item" id="audio1-all">
             <div class="item-text2">1. Chuyện của Mai</div>
             <div class="audio-player-item-text">
-              <span>1. Chuyện của Mai:</span> "Nữ hoàng" vận động viên
+              1. Chuyện của Mai: "Nữ hoàng" vận động viên
             </div>
             <div class="audio-item-box">
               <div class="audio1 audio-item">
@@ -104,10 +116,10 @@
               ></audio>
             </div>
           </div>
-          <div class="audio-player-item">
+          <div class="audio-player-item" id="audio2-all">
             <div class="item-text2">2. Chuyện của ông Quý</div>
             <div class="audio-player-item-text">
-              <span>2. Chuyện của ông Quý:</span> Những bước chân không mỏi
+              2. Chuyện của ông Quý: Những bước chân không mỏi
             </div>
             <div class="audio-item-box">
               <div class="audio2 audio-item">
@@ -133,11 +145,10 @@
               ></audio>
             </div>
           </div>
-          <div class="audio-player-item">
+          <div class="audio-player-item" id="audio3-all">
             <div class="item-text2">3. Chuyện của Tùng</div>
             <div class="audio-player-item-text">
-              <span>3. Chuyện của Tùng:</span> Người góp phần mở những lối đi
-              hạnh phúc
+              3. Chuyện của Tùng: Người góp phần mở những lối đi hạnh phúc
             </div>
             <div class="audio-item-box">
               <div class="audio3 audio-item">
