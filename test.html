@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #scene {
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        top: calc(100% - 680px);
+        height: 100%;
+      }
+      #scene img {
+        width: 100%;
+        display: block;
+      }
+      .layer {
+        transform: translate3d(-9px, -12.6px, 0px);
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        position: relative;
+        display: block;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+      }
+      .coverImg {
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #f6cb60">
+      <div
+        id="scene"
+        style="
+          transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
+          transform-style: preserve-3d;
+          backface-visibility: hidden;
+          pointer-events: none;
+          max-width: 950px;
+          margin: 0 auto;
+        "
+      >
+        <div class="layer">
+          <div class="coverImg">
+            <img src="images/b0/layer 03.png" alt="" style="max-width: 100%" />
+          </div>
+        </div>
+
+        <div class="layer" data-depth="-0.1">
+          <div class="coverImg">
+            <img src="images/b0/layer 03.png" alt="" style="max-width: 100%" />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.1">
+          <div class="coverImg">
+            <img src="images/b0/layer 02.png" alt="" style="max-width: 100%" />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.1">
+          <div class="coverImg">
+            <img src="images/b0/layer 01.png" alt="" style="max-width: 100%" />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.05">
+          <div class="coverImg">
+            <img src="images/b0/Chi Mai.png" alt="" style="width: 20%" id="chi-mai"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/parallax.js"></script>
+  </body>
+</html>
