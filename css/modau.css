@@ -64,7 +64,7 @@ body {
   transition: background-size 0.3s, background-position 0.3s 0.3s;
   padding: 4px 20px;
   border-radius: 10px;
-  background-image: linear-gradient(#ffffff4d 0 0);
+  background-image: linear-gradient(#edb528d8 0 0);
 }
 .modau-item-text-right {
   color: #000;
@@ -75,7 +75,7 @@ body {
   transition: background-size 0.3s, background-position 0.3s 0.3s;
   padding: 4px 20px;
   border-radius: 10px;
-  background-image: linear-gradient(#edb52848 0 0);
+  background-image: linear-gradient(#fff 0 0);
 }
 .modau-box:hover .icon-eye img {
   transform: scale(1.1);
