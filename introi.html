@@ -18,13 +18,82 @@
     <title>Nguyện ước về con đường hy vọng</title>
   </head>
   <body onload="loadPageFunction()">
-    <!-- Start Loading Page -->
     <div
       id="loading-page"
-      style="background-image: url('images/cover.jpg')"
-      class="loading-page"
+      style="
+        background-color: #f6cb5f;
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      "
     >
-      <!-- <img src="images/cover.jpg" alt="" style="display: none; height: 100%; width: 100%;"/> -->
+      <div
+        id="scene"
+        style="
+          transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
+          transform-style: preserve-3d;
+          backface-visibility: hidden;
+          pointer-events: none;
+          overflow: hidden;
+        "
+      >
+        <div class="layer" data-depth="-0.3">
+          <div class="coverImg">
+            <img
+              src="images/bo2/layer 03.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.3">
+          <div class="coverImg">
+            <img
+              src="images/bo2/layer 02.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.2">
+          <div class="coverImg">
+            <img
+              src="images/bo2/layer 01.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="-0.1">
+          <div class="coverImg">
+            <img
+              src="images/bo2/Chi Mai.png"
+              alt=""
+              id="chi-mai"
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.05">
+          <div class="coverImg">
+            <img
+              src="images/bo2/Ong Quy.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.1">
+          <div class="coverImg">
+            <img
+              src="images/bo2/Anh Tung.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+      </div>
       <div class="click-start area">Click để bắt đầu</div>
     </div>
     <!-- End Loading Page -->
@@ -216,6 +285,8 @@
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/parallax.js"></script>
     <script src="js/modau.js"></script>
   </body>
 </html>
