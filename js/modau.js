@@ -230,7 +230,7 @@ audio3.addEventListener("timeupdate", () => {
 listSpan3.forEach((element, index) => {
   element.addEventListener("click", (e) => {
     //remove active classes
-    list_span3.forEach((e) => {
+    listSpan3.forEach((e) => {
       e.classList.remove("active");
     });
 
@@ -253,7 +253,7 @@ const nktPage = document.querySelector(".audio-box");
 let audioIntro1 = document.querySelector("#audio-intro");
 let audioIntro2 = document.querySelector("#audio-intro2");
 
-let isInNKTPage = false;
+// let isInNKTPage = false;
 
 startClick.addEventListener("click", () => {
   // loadingPage.classList.add("display-none");
@@ -272,7 +272,7 @@ const handleOpenNKTpage = () => {
   const removeIntro = document.querySelector("#intro-remove");
   removeIntro.remove();
   nktPage.classList.remove("display-none");
-  isInNKTPage = true;
+  // isInNKTPage = true;
   setTimeout(() => {
     audioIntro2.play();
     audioIntro1.pause();
@@ -284,86 +284,86 @@ modauBoxLeft.addEventListener("click", () => {
   handleOpenNKTpage();
 });
 
-window.addEventListener("keydown", (event) => {
-  console.log("event.key", event.key);
-  if (event.key === "2") {
-    if (!isInNKTPage) {
-      // Nếu bạn muốn trải nghiệm giao diện cho người khiếm thị, mời bấm mũi tên xuống.
-      handleOpenNKTpage();
-    } else {
-      // Bấm mũi tên xuống để nghe lại hướng dẫn.
-      audioIntro2.currentTime = 0;
-      audioIntro2.play();
-      // reset audio 1
-      handleResetAudio(1);
-      handleResetAudio(2);
-      handleResetAudio(3);
-    }
-  }
-  // Bấm mũi tên trái để nghe câu chuyện 1: Chuyện của Mai: “Nữ hoàng” vận động viên
-  if (event.key === "1") {
-    if (isInNKTPage) {
-      audio1.currentTime = 0;
-      audio1.play();
-      playBtn1.classList.add("hidden-item");
-      pauseBtn1.classList.remove("hidden-item");
-      listSpan1.forEach((e) => {
-        e.classList.remove("active");
-      });
-      // reset 2
-      audio2.pause();
-      playBtn2.classList.remove("hidden-item");
-      pauseBtn2.classList.add("hidden-item");
-      listSpan2.forEach((e) => {
-        e.classList.remove("active");
-      });
-      audio2.currentTime = 0;
-      // reset 3
-      audio3.pause();
-      playBtn3.classList.remove("hidden-item");
-      pauseBtn3.classList.add("hidden-item");
-      listSpan3.forEach((e) => {
-        e.classList.remove("active");
-      });
-      audio3.currentTime = 0;
-      // reset 0
-      audioIntro2.pause();
-      audioIntro2.currentTime = 0;
-    }
-  }
-  // Bấm mũi tên lên để nghe câu chuyện 2: Chuyện của ông Quý: Những bước chân không mỏi
-  if (event.key === "5") {
-    if (isInNKTPage) {
-      audio2.currentTime = 0;
-      audio2.play();
-      playBtn2.classList.add("hidden-item");
-      pauseBtn2.classList.remove("hidden-item");
-      listSpan2.forEach((e) => {
-        e.classList.remove("active");
-      });
-      //
-      handleResetAudio(0);
-      handleResetAudio(1);
-      handleResetAudio(3);
-    }
-  }
-  // Bấm mũi tên phải để nghe câu chuyện 3: Chuyện của Tùng: Người góp phần mở những lối đi hạnh phúc
-  if (event.key === "3") {
-    if (isInNKTPage) {
-      audio3.currentTime = 0;
-      audio3.play();
-      playBtn3.classList.add("hidden-item");
-      pauseBtn3.classList.remove("hidden-item");
-      listSpan3.forEach((e) => {
-        e.classList.remove("active");
-      });
-      // reset       //
-      handleResetAudio(0);
-      handleResetAudio(1);
-      handleResetAudio(2);
-    }
-  }
-});
+// window.addEventListener("keydown", (event) => {
+//   console.log("event.key", event.key);
+//   if (event.key === "2") {
+//     if (!isInNKTPage) {
+//       // Nếu bạn muốn trải nghiệm giao diện cho người khiếm thị, mời bấm mũi tên xuống.
+//       handleOpenNKTpage();
+//     } else {
+//       // Bấm mũi tên xuống để nghe lại hướng dẫn.
+//       audioIntro2.currentTime = 0;
+//       audioIntro2.play();
+//       // reset audio 1
+//       handleResetAudio(1);
+//       handleResetAudio(2);
+//       handleResetAudio(3);
+//     }
+//   }
+//   // Bấm mũi tên trái để nghe câu chuyện 1: Chuyện của Mai: “Nữ hoàng” vận động viên
+//   if (event.key === "1") {
+//     if (isInNKTPage) {
+//       audio1.currentTime = 0;
+//       audio1.play();
+//       playBtn1.classList.add("hidden-item");
+//       pauseBtn1.classList.remove("hidden-item");
+//       listSpan1.forEach((e) => {
+//         e.classList.remove("active");
+//       });
+//       // reset 2
+//       audio2.pause();
+//       playBtn2.classList.remove("hidden-item");
+//       pauseBtn2.classList.add("hidden-item");
+//       listSpan2.forEach((e) => {
+//         e.classList.remove("active");
+//       });
+//       audio2.currentTime = 0;
+//       // reset 3
+//       audio3.pause();
+//       playBtn3.classList.remove("hidden-item");
+//       pauseBtn3.classList.add("hidden-item");
+//       listSpan3.forEach((e) => {
+//         e.classList.remove("active");
+//       });
+//       audio3.currentTime = 0;
+//       // reset 0
+//       audioIntro2.pause();
+//       audioIntro2.currentTime = 0;
+//     }
+//   }
+//   // Bấm mũi tên lên để nghe câu chuyện 2: Chuyện của ông Quý: Những bước chân không mỏi
+//   if (event.key === "5") {
+//     if (isInNKTPage) {
+//       audio2.currentTime = 0;
+//       audio2.play();
+//       playBtn2.classList.add("hidden-item");
+//       pauseBtn2.classList.remove("hidden-item");
+//       listSpan2.forEach((e) => {
+//         e.classList.remove("active");
+//       });
+//       //
+//       handleResetAudio(0);
+//       handleResetAudio(1);
+//       handleResetAudio(3);
+//     }
+//   }
+//   // Bấm mũi tên phải để nghe câu chuyện 3: Chuyện của Tùng: Người góp phần mở những lối đi hạnh phúc
+//   if (event.key === "3") {
+//     if (isInNKTPage) {
+//       audio3.currentTime = 0;
+//       audio3.play();
+//       playBtn3.classList.add("hidden-item");
+//       pauseBtn3.classList.remove("hidden-item");
+//       listSpan3.forEach((e) => {
+//         e.classList.remove("active");
+//       });
+//       // reset       //
+//       handleResetAudio(0);
+//       handleResetAudio(1);
+//       handleResetAudio(2);
+//     }
+//   }
+// });
 
 
 
