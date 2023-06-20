@@ -256,7 +256,9 @@ let audioIntro2 = document.querySelector("#audio-intro2");
 let isInNKTPage = false;
 
 startClick.addEventListener("click", () => {
-  loadingPage.classList.add("display-none");
+  // loadingPage.classList.add("display-none");
+  const loadingPager = document.querySelector("#loading-page");
+  loadingPager.remove();
   introPage.classList.remove("display-none");
   setTimeout(() => {
     audioIntro1.play();
@@ -266,8 +268,9 @@ startClick.addEventListener("click", () => {
 const modauBoxLeft = document.querySelector(".modau-item-text-left");
 
 const handleOpenNKTpage = () => {
-  loadingPage.classList.add("display-none");
-  introPage.classList.add("display-none");
+  // introPage.classList.add("display-none");
+  const removeIntro = document.querySelector("#intro-remove");
+  removeIntro.remove();
   nktPage.classList.remove("display-none");
   isInNKTPage = true;
   setTimeout(() => {
