@@ -7,25 +7,129 @@
     <link rel="stylesheet" href="css/init.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/modau.css" />
-    <link rel="stylesheet" href="css/audio.css" />
-    <link rel="stylesheet" href="css/audio-page.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>Desire for the path of hope</title>
+    <title>Nguyện ước về con đường hy vọng</title>
   </head>
-  <body onload="loadPageFunction()">
-    <!-- Start Loading Page -->
+  <body>
     <div
       id="loading-page"
-      style="background-image: url('images/cover.jpg')"
-      class="loading-page"
+      style="
+        background-color: #f6cb5f;
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      "
     >
-      <!-- <img src="images/cover.jpg" alt="" style="display: none; height: 100%; width: 100%;"/> -->
-      <div class="click-start area">Click to start</div>
+      <div
+        id="scene"
+        style="
+          transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
+          transform-style: preserve-3d;
+          backface-visibility: hidden;
+          pointer-events: none;
+          overflow: hidden;
+        "
+      >
+        <div class="layer" data-depth="-0.3">
+          <div class="coverImg">
+            <img
+              src="images/b0/layer-03.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.3">
+          <div class="coverImg">
+            <img
+              src="images/b0/layer-02.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.2">
+          <div class="coverImg">
+            <img
+              src="images/b0/layer-01.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <!-- ///////////// start hover //////////////// -->
+        <div class="layer" data-depth="0.1">
+          <div class="coverImg">
+            <img
+              class="hidden-item"
+              id="chi-mai-hover"
+              src="images/b0/hover-chi-mai.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.1">
+          <div class="coverImg">
+            <img
+              class="hidden-item"
+              id="ong-quy-hover"
+              src="images/b0/hover-ong-quy.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.1">
+          <div class="coverImg">
+            <img
+              class="hidden-item"
+              id="anh-tung-hover"
+              src="images/b0/hover-anh-tung.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <!-- ///////////// -->
+        <div class="layer" data-depth="0.1">
+          <div class="coverImg">
+            <img
+              src="images/b0/chi-mai.png"
+              alt=""
+              id="chi-mai"
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.1">
+          <div class="coverImg">
+            <img
+              id="ong-quy"
+              src="images/b0/ong-quy.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+        <div class="layer" data-depth="0.1">
+          <div class="coverImg">
+            <img
+              id="anh-tung"
+              src="images/b0/anh-tung.png"
+              alt=""
+              style="width: 100%; display: block"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="click-start">Click to start</div>
     </div>
     <!-- End Loading Page -->
 
@@ -36,10 +140,10 @@
       style="
         background-image: linear-gradient(
             to bottom,
-            rgb(255 244 244 / 52%),
-            rgb(0 0 0 / 73%)
+            rgb(33 30 30 / 52%),
+            rgb(14 14 14 / 73%)
           ),
-          url('images/cover.jpg');
+          url('images/b0/overlay.png');
       "
     >
       <audio id="audio-intro" hidden src="images/audios/intro1.mp3"></audio>
@@ -51,7 +155,8 @@
           <div class="icon-eye">
             <img src="images/icon-mat-nham.png" alt="" />
           </div>
-          <div
+          <a
+            href="audioe.html"
             class="modau-item-text modau-item-text-left"
             style="
               font-weight: 600;
@@ -59,11 +164,12 @@
               text-align: center;
               margin-left: 10px;
               margin-right: 10px;
+              text-decoration: none;
               z-index: 10;
             "
           >
             Interface for the blind
-          </div>
+          </a>
         </div>
       </div>
 
@@ -91,130 +197,9 @@
       </div>
     </div>
 
-    <!-- Page nkt -->
-    <div class="audio-box display-none">
-      <div style="max-width: 900px; width: 100%; margin: 0 auto">
-        <h1 class="audio-title">Desire for the path of hope</h1>
-        <div style="margin-bottom: 60px">
-          Desire for the path of hope tells a story of three disabled persons,
-          who have difficulties in making a living and integrating into society:
-          A disabled female athlete, also a cancer patient, a former
-          journaohlist who lost vision and a Master degree holder who is in a
-          wheelchair.
-        </div>
-        <div class="audio-player-box">
-          <div class="audio-player-item" id="audio1-all">
-            <!-- <div class="item-text2">1. Chuyện của Mai</div> -->
-            <div class="audio-player-item-text">
-              1. The “Queen” Athlete
-            </div>
-            <div class="audio-item-box">
-              <div class="audio1 audio-item">
-                <div class="progress1"></div>
-                <img
-                  src="images/icon-play.png"
-                  alt=""
-                  class="play_play1 play_audio1"
-                  style="height: 25px; width: 25px; opacity: 0.6"
-                />
-                <img
-                  src="images/icon-pause.png"
-                  alt=""
-                  style="height: 18px; width: 18px; opacity: 0.6"
-                  class="play_pause1 play_audio1 hidden-item"
-                />
-              </div>
-              <audio
-                id="audio1"
-                style="background-color: rebeccapurple"
-                hidden
-                src="images/audios/b1-full.mp3"
-              ></audio>
-            </div>
-          </div>
-          <div class="audio-player-item" id="audio2-all">
-            <!-- <div class="item-text2">2. Chuyện của ông Quý</div> -->
-            <div class="audio-player-item-text">
-              2. The untiring footsteps
-            </div>
-            <div class="audio-item-box">
-              <div class="audio2 audio-item">
-                <div class="progress2"></div>
-                <img
-                  src="images/icon-play.png"
-                  alt=""
-                  class="play_play2 play_audio2"
-                  style="height: 25px; width: 25px; opacity: 0.6"
-                />
-                <img
-                  src="images/icon-pause.png"
-                  alt=""
-                  style="height: 18px; width: 18px; opacity: 0.6"
-                  class="play_pause2 play_audio2 hidden-item"
-                />
-              </div>
-              <audio
-                id="audio2"
-                style="background-color: rebeccapurple"
-                hidden
-                src="images/audios/bai2-full.mp3"
-              ></audio>
-            </div>
-          </div>
-          <div class="audio-player-item" id="audio3-all">
-            <!-- <div class="item-text2">3. Chuyện của Tùng</div> -->
-            <div class="audio-player-item-text">
-              3. The path to happiness
-            </div>
-            <div class="audio-item-box">
-              <div class="audio3 audio-item">
-                <div class="progress3"></div>
-                <img
-                  src="images/icon-play.png"
-                  alt=""
-                  class="play_play3 play_audio3"
-                  style="height: 25px; width: 25px; opacity: 0.6"
-                />
-                <img
-                  src="images/icon-pause.png"
-                  alt=""
-                  style="height: 18px; width: 18px; opacity: 0.6"
-                  class="play_pause3 play_audio3 hidden-item"
-                />
-              </div>
-              <audio
-                id="audio3"
-                style="background-color: rebeccapurple"
-                hidden
-                src="images/audios/bai3-full.mp3"
-              ></audio>
-            </div>
-          </div>
-        </div>
-        <div style="margin-top: 20px">
-          <a href="phan1.html" style="color: #fff"
-            >Interface for the sighted</a
-          >
-        </div>
-      </div>
-      <div class="desc">
-        <div class="tit" style="font-weight: 600">Authors</div>
-        <div>
-          Content:
-          <b
-            >Trang Công Tiến, Phạm Trung Tuyến, Đỗ Minh Hồng, Tăng Hải Hà, Đỗ
-            Anh Thư</b
-          >
-        </div>
-        <div>Translated by: <b>Phoebe</b></div>
-        <div>Graphics: <b>Nguyễn Cường, Quang Huy, Mai Phương</b></div>
-        <div>Photos + Videos: <b>Trọng Nghĩa, Hồng Lĩnh, Phúc Tài, Lê Tùng</b></div>
-        <div>UI/UX designers: <b>Uyen Huong</b></div>
-        <div>Developer: <b>Jasper Nguyen</b></div>
-      </div>
-    </div>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/parallax.js"></script>
     <script src="js/modau.js"></script>
   </body>
 </html>
