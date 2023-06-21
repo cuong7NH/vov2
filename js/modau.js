@@ -20,16 +20,42 @@ const ongQuyHover = document.querySelector("#ong-quy-hover");
 const anhTung = document.querySelector("#anh-tung");
 const anhTungHover = document.querySelector("#anh-tung-hover");
 
-const hoverF = () => {
-  console.log(123);
-  setInterval(() => {
-    console.log(111);
-    chiMaiHover.classList.toggle("hidden-item");
-    chiMai1.classList.toggle("hidden-item");
-    ongQuyHover.classList.toggle("hidden-item");
-    ongQuy.classList.toggle("hidden-item");
-    anhTungHover.classList.toggle("hidden-item");
-    anhTung.classList.toggle("hidden-item");
-  }, 4000);
-};
-hoverF();
+const chiMaiFake = document.querySelector("#chi-mai-fake");
+const ongQuyFake = document.querySelector("#ong-quy-fake");
+const anhTungFake = document.querySelector("#anh-tung-fake");
+let timerChiMai;
+let timerOngQuy;
+let timerAnhTung;
+
+chiMaiFake.addEventListener("mouseover", () => {
+  clearTimeout(timerChiMai);
+  chiMaiHover.classList.remove("hidden-item");
+});
+
+chiMaiFake.addEventListener("mouseleave", () => {
+  timerChiMai = setTimeout(() => {
+    chiMaiHover.classList.add("hidden-item");
+  }, 6000);
+});
+
+ongQuyFake.addEventListener("mouseover", () => {
+  clearTimeout(timerOngQuy);
+  ongQuyHover.classList.remove("hidden-item");
+});
+
+ongQuyFake.addEventListener("mouseleave", () => {
+  timerOngQuy = setTimeout(() => {
+    ongQuyHover.classList.add("hidden-item");
+  }, 6000);
+});
+
+anhTungFake.addEventListener("mouseover", () => {
+  clearTimeout(timerAnhTung);
+  anhTungHover.classList.remove("hidden-item");
+});
+
+anhTungFake.addEventListener("mouseleave", () => {
+  timerAnhTung = setTimeout(() => {
+    anhTungHover.classList.add("hidden-item");
+  }, 6000);
+});

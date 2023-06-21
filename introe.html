@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>Nguyện ước về con đường hy vọng</title>
+    <title>Desire for the path of hope</title>
   </head>
   <body>
     <div
@@ -26,108 +26,211 @@
         align-items: center;
       "
     >
-      <div
-        id="scene"
-        style="
-          transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
-          transform-style: preserve-3d;
-          backface-visibility: hidden;
-          pointer-events: none;
-          overflow: hidden;
-        "
-      >
-        <div class="layer" data-depth="-0.3">
-          <div class="coverImg">
-            <img
-              src="images/b0/layer-03.png"
-              alt=""
-              style="width: 100%; display: block"
-            />
+      <div style="position: relative">
+        <div
+          id="scene"
+          style="
+            transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            pointer-events: none;
+            overflow: hidden;
+          "
+        >
+          <div class="layer" data-depth="-0.3">
+            <div class="coverImg">
+              <img
+                src="images/b0/layer-03.png"
+                alt=""
+                style="width: 100%; display: block"
+              />
+            </div>
           </div>
-        </div>
-        <div class="layer" data-depth="0.3">
-          <div class="coverImg">
-            <img
-              src="images/b0/layer-02.png"
-              alt=""
-              style="width: 100%; display: block"
-            />
+          <div class="layer" data-depth="0.3">
+            <div class="coverImg">
+              <img
+                src="images/b0/layer-02.png"
+                alt=""
+                style="width: 100%; display: block"
+              />
+            </div>
           </div>
-        </div>
-        <div class="layer" data-depth="0.2">
-          <div class="coverImg">
-            <img
-              src="images/b0/layer-01e.png"
-              alt=""
-              style="width: 100%; display: block"
-            />
+          <div class="layer" data-depth="0.2">
+            <div class="coverImg">
+              <img
+                src="images/b0/layer-01e.png"
+                alt=""
+                style="width: 100%; display: block"
+              />
+            </div>
           </div>
-        </div>
-        <!-- ///////////// start hover //////////////// -->
-        <div class="layer" data-depth="0.1">
-          <div class="coverImg">
-            <img
-              class="hidden-item"
-              id="chi-mai-hover"
-              src="images/b0/chi-maie.png"
-              alt=""
-              style="width: 100%; display: block"
-            />
+
+          <div class="layer" data-depth="0.1">
+            <div class="coverImg">
+              <img
+                src="images/b0/chi-mai.png"
+                alt=""
+                id="chi-mai"
+                style="width: 100%; display: block"
+              />
+            </div>
           </div>
-        </div>
-        <div class="layer" data-depth="0.1">
-          <div class="coverImg">
-            <img
-              class="hidden-item"
-              id="ong-quy-hover"
-              src="images/b0/ong-quye.png"
-              alt=""
-              style="width: 100%; display: block"
-            />
+          <div class="layer" data-depth="0.1">
+            <div class="coverImg">
+              <img
+                id="ong-quy"
+                src="images/b0/ong-quy.png"
+                alt=""
+                style="width: 100%; display: block"
+              />
+            </div>
           </div>
-        </div>
-        <div class="layer" data-depth="0.1">
-          <div class="coverImg">
-            <img
-              class="hidden-item"
-              id="anh-tung-hover"
-              src="images/b0/anh-tunge.png"
-              alt=""
-              style="width: 100%; display: block"
-            />
+          <div class="layer" data-depth="0.1">
+            <div class="coverImg">
+              <img
+                id="anh-tung"
+                src="images/b0/anh-tung.png"
+                alt=""
+                style="width: 100%; display: block"
+              />
+            </div>
           </div>
-        </div>
-        <!-- ///////////// -->
-        <div class="layer" data-depth="0.1">
-          <div class="coverImg">
-            <img
-              src="images/b0/chi-mai.png"
-              alt=""
-              id="chi-mai"
-              style="width: 100%; display: block"
-            />
+
+          <!-- ///////////// start hover //////////////// -->
+          <div class="layer" data-depth="0.1">
+            <div class="coverImg">
+              <img
+                class="hidden-item"
+                id="chi-mai-hover"
+                src="images/b0/hover-chi-mai-e.png"
+                alt=""
+                style="width: 100%; display: block"
+              />
+            </div>
           </div>
-        </div>
-        <div class="layer" data-depth="0.1">
-          <div class="coverImg">
-            <img
-              id="ong-quy"
-              src="images/b0/ong-quy.png"
-              alt=""
-              style="width: 100%; display: block"
-            />
+          <div class="layer" data-depth="0.1">
+            <div class="coverImg">
+              <img
+                class="hidden-item"
+                id="ong-quy-hover"
+                src="images/b0/hover-ong-quy-e.png"
+                alt=""
+                style="width: 100%; display: block"
+              />
+            </div>
           </div>
-        </div>
-        <div class="layer" data-depth="0.1">
-          <div class="coverImg">
-            <img
-              id="anh-tung"
-              src="images/b0/anh-tung.png"
-              alt=""
-              style="width: 100%; display: block"
-            />
+          <div class="layer" data-depth="0.1">
+            <div class="coverImg">
+              <img
+                class="hidden-item"
+                id="anh-tung-hover"
+                src="images/b0/hover-anh-tung-e.png"
+                alt=""
+                style="width: 100%; display: block"
+              />
+            </div>
           </div>
+          <!-- ///////////// -->
         </div>
+        <div
+          id="chi-mai-fake"
+          style="
+            position: absolute;
+            left: 37%;
+            bottom: 0;
+            background: antiquewhite;
+            height: 40%;
+            width: 10%;
+            opacity: 0;
+            cursor: pointer;
+            opacity: 0;
+          "
+        >
+          chi mai
+        </div>
+        <a
+          href="phan1e.html"
+          id="chi-mai-fake-box"
+          style="
+            display: block;
+            position: absolute;
+            left: 11%;
+            bottom: 18%;
+            background: antiquewhite;
+            height: 16%;
+            width: 25%;
+            cursor: pointer;
+            opacity: 0;
+          "
+        >
+          chi mai boxx
+        </a>
+        <div
+          id="ong-quy-fake"
+          style="
+            position: absolute;
+            left: 47%;
+            bottom: 0;
+            background: #412121;
+            height: 54%;
+            width: 10%;
+            opacity: 0;
+            cursor: pointer;
+          "
+        >
+          ong quy
+        </div>
+        <a
+          href="phan2e.html"
+          id="ong-quy-fake-box"
+          style="
+            display: block;
+            position: absolute;
+            left: 43%;
+            bottom: 55%;
+            background: antiquewhite;
+            height: 16%;
+            width: 25%;
+            cursor: pointer;
+            opacity: 0;
+          "
+        >
+          ong quy boxx
+        </a>
+
+        <div
+          id="anh-tung-fake"
+          style="
+            position: absolute;
+            left: 57%;
+            bottom: 0;
+            background: #75ac5f;
+            height: 44%;
+            width: 10%;
+            opacity: 0;
+            cursor: pointer;
+            opacity: 0;
+          "
+        >
+          anh tung
+        </div>
+        <a
+          href="phan3e.html"
+          id="anh-tung-fake-box"
+          style="
+            display: block;
+            position: absolute;
+            left: 70%;
+            bottom: 23%;
+            background: antiquewhite;
+            height: 16%;
+            width: 25%;
+            cursor: pointer;
+            opacity: 0;
+          "
+        >
+          anh tung boxx
+        </a>
       </div>
       <div class="click-start">Click to start</div>
     </div>
@@ -143,7 +246,7 @@
             rgb(33 30 30 / 52%),
             rgb(14 14 14 / 73%)
           ),
-          url('images/b0/overlay.png');
+          url('images/b0/overlaye.png');
       "
     >
       <audio id="audio-intro" hidden src="images/audios/intro1e.mp3"></audio>
