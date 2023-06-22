@@ -27,35 +27,46 @@ let timerChiMai;
 let timerOngQuy;
 let timerAnhTung;
 
-chiMaiFake.addEventListener("mouseover", () => {
-  clearTimeout(timerChiMai);
-  chiMaiHover.classList.remove("hidden-item");
-});
 
-chiMaiFake.addEventListener("mouseleave", () => {
-  timerChiMai = setTimeout(() => {
-    chiMaiHover.classList.add("hidden-item");
-  }, 6000);
-});
+const showHover = () => {
+  setTimeout(() => {
+    chiMaiHover.classList.remove("hidden-item");
+    ongQuyHover.classList.remove("hidden-item");
+    anhTungHover.classList.remove("hidden-item");
+  }, 5000)
+}
 
-ongQuyFake.addEventListener("mouseover", () => {
-  clearTimeout(timerOngQuy);
-  ongQuyHover.classList.remove("hidden-item");
-});
+showHover()
 
-ongQuyFake.addEventListener("mouseleave", () => {
-  timerOngQuy = setTimeout(() => {
-    ongQuyHover.classList.add("hidden-item");
-  }, 6000);
-});
+// chiMaiFake.addEventListener("mouseover", () => {
+//   clearTimeout(timerChiMai);
+//   chiMaiHover.classList.remove("hidden-item");
+// });
 
-anhTungFake.addEventListener("mouseover", () => {
-  clearTimeout(timerAnhTung);
-  anhTungHover.classList.remove("hidden-item");
-});
+// chiMaiFake.addEventListener("mouseleave", () => {
+//   timerChiMai = setTimeout(() => {
+//     chiMaiHover.classList.add("hidden-item");
+//   }, 6000);
+// });
 
-anhTungFake.addEventListener("mouseleave", () => {
-  timerAnhTung = setTimeout(() => {
-    anhTungHover.classList.add("hidden-item");
-  }, 6000);
-});
+// ongQuyFake.addEventListener("mouseover", () => {
+//   clearTimeout(timerOngQuy);
+//   ongQuyHover.classList.remove("hidden-item");
+// });
+
+// ongQuyFake.addEventListener("mouseleave", () => {
+//   timerOngQuy = setTimeout(() => {
+//     ongQuyHover.classList.add("hidden-item");
+//   }, 6000);
+// });
+
+// anhTungFake.addEventListener("mouseover", () => {
+//   clearTimeout(timerAnhTung);
+//   anhTungHover.classList.remove("hidden-item");
+// });
+
+// anhTungFake.addEventListener("mouseleave", () => {
+//   timerAnhTung = setTimeout(() => {
+//     anhTungHover.classList.add("hidden-item");
+//   }, 6000);
+// });
